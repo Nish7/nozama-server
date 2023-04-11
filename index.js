@@ -4,6 +4,9 @@ const cors = require('cors');
 const app = express();
 const path = require('path');
 
+const dotenv = require('dotenv');
+dotenv.config();
+
 // Connect DB
 connectDB();
 app.use(cors());
